@@ -66,4 +66,3 @@ Not applicable. This level is high score based.
 - Have a basic plain with astronaut spawns
 - Camera follows ufo
 - Shoot beams downwards
-- 
