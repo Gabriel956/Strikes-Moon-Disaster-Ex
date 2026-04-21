@@ -337,11 +337,6 @@ MonoBehaviour:
   minPitch: -30
   maxPitch: 70
   lockCursorWhileRotating: 1
---- !u!4 &594022309 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4623408044836316958, guid: 0aef8923597a51e43816b8284b042d67, type: 3}
-  m_PrefabInstance: {fileID: 4510953960373506548}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &812280524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 99944380894182346, guid: 9f3d55ca4a76ec9ee8f3177bfbde46b1, type: 3}
@@ -413,7 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 924645055b559fd4296653d2b2873dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPathFinding
-  player: {fileID: 594022309}
+  player: {fileID: 454756982}
 --- !u!1001 &916473105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -469,10 +464,6 @@ PrefabInstance:
     - target: {fileID: 2038625277349122203, guid: 9f3d55ca4a76ec9ee8f3177bfbde46b1, type: 3}
       propertyPath: m_Name
       value: ufo
-      objectReference: {fileID: 0}
-    - target: {fileID: 2038625277349122203, guid: 9f3d55ca4a76ec9ee8f3177bfbde46b1, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8192494733659670342, guid: 9f3d55ca4a76ec9ee8f3177bfbde46b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5591,7 +5582,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!28 &1423940185
+--- !u!28 &1231324356
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5637,6 +5628,38 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!21 &1430481523
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: AimIndicator_Mat (Runtime)
+  m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 1231324356}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats: []
+    m_Colors: []
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1001 &1486309057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5979,7 +6002,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1852524282}
+  - {fileID: 1430481523}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6224,38 +6247,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1663247609}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1852524282
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: AimIndicator_Mat (Runtime)
-  m_Shader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 1423940185}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats: []
-    m_Colors: []
-  m_BuildTextureStacks: []
-  m_AllowLocking: 1
 --- !u!1001 &1924582793
 PrefabInstance:
   m_ObjectHideFlags: 0

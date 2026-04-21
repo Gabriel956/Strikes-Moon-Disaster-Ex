@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 21
+  controlID: 61
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 112}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 22
+  controlID: 62
   draggingID: 0
 --- !u!114 &10
 MonoBehaviour:
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 56}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 23
+  controlID: 52
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -689,7 +689,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -699,21 +699,21 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: 16
-  m_LastProjectPath: /home/elyn/Documents/csci-3370-01-spring_2026/Strikes-Moon-Disaster/main
+  m_LastProjectPath: C:\Users\gobae\OneDrive\Desktop\Code\Code\Games\Strikes-Moon-Disaster-Ex
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs:
-    - m_Data: 62066
+    - m_Data: 46314
     m_LastClickedID:
-      m_Data: 62066
+      m_Data: 46314
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 46314
+    - m_Data: 46838
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -746,7 +746,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 46314
+    - m_Data: 46838
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -773,9 +773,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: []
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs:
+    - m_Data: 45688
+    m_LastClickedInstanceID: 45688
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_Data: 49256
     m_RenameOverlay:
@@ -803,7 +804,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 87}
     m_GridSize: 16
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 183.5
@@ -903,10 +904,7 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -49658
-      - m_Data: -47486
-      - m_Data: 62212
-      - m_Data: 62228
+      - m_Data: -1294
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1527,9 +1525,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -6.355205, y: -5.6021543, z: -1.0618134}
+    m_Target: {x: 8.968046, y: -2.5286355, z: 8.74806}
     speed: 2
-    m_Value: {x: 2.16716, y: 4.920354, z: -2.9654217}
+    m_Value: {x: -6.355205, y: -5.6021543, z: -1.0618134}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1575,13 +1573,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.482
   m_Rotation:
-    m_Target: {x: -0.011721673, y: -0.9781236, z: 0.19961011, w: -0.057424292}
+    m_Target: {x: -0.14591922, y: -0.44057497, z: 0.07282048, w: -0.8827863}
     speed: 2
-    m_Value: {x: -0.01791816, y: 0.9657091, z: 0.06935111, w: 0.24956326}
+    m_Value: {x: 0.011721673, y: 0.9781236, z: -0.19961011, w: 0.057424292}
   m_Size:
-    m_Target: 11.401582
+    m_Target: 10.7437315
     speed: 2
-    m_Value: 3.6476107
+    m_Value: 16.214197
   m_Ortho:
     m_Target: 0
     speed: 2
