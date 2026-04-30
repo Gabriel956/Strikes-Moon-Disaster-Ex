@@ -16,6 +16,8 @@ public class EnemySpawner : MonoBehaviour
     public float maxX = 8f;
     public float minZ = -8f;
     public float maxZ = 8f;
+    public float minY = 0.5f;
+    public float maxY = 0.5f;
 
     void Start()
     {
@@ -35,8 +37,9 @@ public class EnemySpawner : MonoBehaviour
         // Generate a random position within the allowed range
         float randomX = Random.Range(minX, maxX);
         float randomZ = Random.Range(minZ, maxZ);
+        float randomY = Random.Range(minY, maxY);
 
-        Vector3 spawnPosition = new Vector3(randomX, 0.5f, randomZ);
+        Vector3 spawnPosition = new Vector3(randomX, randomY, randomZ);
 
         // Create the enemy in the scene
         Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
