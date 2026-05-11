@@ -236,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3257419001860906134}
   - component: {fileID: 766338121435748063}
+  - component: {fileID: 5721525030991347056}
   m_Layer: 0
   m_Name: astronaut
   m_TagString: astro
@@ -288,6 +289,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 16
   m_CollisionDetection: 0
+--- !u!114 &5721525030991347056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3682086383667509469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa8d51ee4e660375aa4e046c80ca73a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::astroAbduct
+  isBeingAbducted: 0
+  riseSpeed: 1.5
 --- !u!1 &6789811277164497795
 GameObject:
   m_ObjectHideFlags: 0

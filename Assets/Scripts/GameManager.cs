@@ -39,10 +39,10 @@ public class GameManager : MonoBehaviour
     void OnGUI()
     {
         GUIStyle style = new GUIStyle();
-        style.fontSize = 400;
+        style.fontSize = 48;
         style.normal.textColor = Color.white;
-        GUI.Label(new Rect(10, 10, 200, 20), "Abducted: " + abductedCount);
-        GUI.Label(new Rect(10, 30, 200, 20), "Time: " + Mathf.Ceil(timeRemaining));
+        GUI.Label(new Rect(10, 10, 600, 60), "Abducted: " + abductedCount, style);
+        GUI.Label(new Rect(10, 75, 600, 60), "Time: " + Mathf.Ceil(timeRemaining), style);
     }
 
     void EndGame(bool won)
