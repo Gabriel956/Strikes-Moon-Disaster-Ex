@@ -560,7 +560,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1001 &1685895525
 PrefabInstance:
@@ -711,7 +711,7 @@ GameObject:
   - component: {fileID: 1807108475}
   - component: {fileID: 1807108474}
   m_Layer: 0
-  m_Name: EnemySpawner
+  m_Name: MeteorSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -730,14 +730,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   enemyPrefab: {fileID: 4308514463321599350, guid: 114d827fd55f050488e34da22387b74d, type: 3}
-  spawnInterval: 0.1
+  spawnInterval: 0.5
   maxEnemies: 1000
-  minX: -8
-  maxX: 8
-  minZ: -8
-  maxZ: 8
-  minY: 5
-  maxY: 10
+  minX: -10
+  maxX: 10
+  minZ: -10
+  maxZ: 10
+  minY: 10
+  maxY: 20
 --- !u!4 &1807108475
 Transform:
   m_ObjectHideFlags: 0
