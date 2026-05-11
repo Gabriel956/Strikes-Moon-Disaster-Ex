@@ -137,10 +137,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementController
   moveSpeed: 5
   elevationSpeed: 5
-  projectilePrefab: {fileID: 0}
+  cameraTransform: {fileID: 0}
+  projectilePrefab: {fileID: 8235888271325143837, guid: 7eaf31ba639678c498d0d49d41de1019, type: 3}
   firePoint: {fileID: 99944380894182346}
   projectileSpeed: 20
   projectileLifetime: 3
+  projectileSpawnOffset: 0.2
 --- !u!1 &3584824735171991486
 GameObject:
   m_ObjectHideFlags: 0

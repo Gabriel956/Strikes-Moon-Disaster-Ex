@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ED1641-CAD2-170A-FF34-93741E5B51D4}|Assembly-CSharp.csproj|c:\\users\\gobae\\onedrive\\desktop\\code\\code\\games\\strikes-moon-disaster-ex\\assets\\scripts\\meteorlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ED1641-CAD2-170A-FF34-93741E5B51D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\meteorlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ED1641-CAD2-170A-FF34-93741E5B51D4}|Assembly-CSharp.csproj|c:\\users\\gobae\\onedrive\\desktop\\code\\code\\games\\strikes-moon-disaster-ex\\assets\\scripts\\projectilehit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ED1641-CAD2-170A-FF34-93741E5B51D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectilehit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ED1641-CAD2-170A-FF34-93741E5B51D4}|Assembly-CSharp.csproj|c:\\users\\gobae\\onedrive\\desktop\\code\\code\\games\\strikes-moon-disaster-ex\\assets\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ED1641-CAD2-170A-FF34-93741E5B51D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6ED1641-CAD2-170A-FF34-93741E5B51D4}|Assembly-CSharp.csproj|C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\assets\\scripts\\enemypathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6ED1641-CAD2-170A-FF34-93741E5B51D4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemypathfinding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MeteorLogic.cs",
+              "DocumentMoniker": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\Assets\\Scripts\\MeteorLogic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MeteorLogic.cs",
+              "ToolTip": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\Assets\\Scripts\\MeteorLogic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MeteorLogic.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T20:00:34.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectileHit.cs",
+              "DocumentMoniker": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\Assets\\Scripts\\ProjectileHit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ProjectileHit.cs",
+              "ToolTip": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\Assets\\Scripts\\ProjectileHit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ProjectileHit.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T20:00:30.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\Assets\\Scripts\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemySpawner.cs",
+              "ToolTip": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\Assets\\Scripts\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemySpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T19:44:02.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyPathFinding.cs",
+              "DocumentMoniker": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\Assets\\Scripts\\EnemyPathFinding.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyPathFinding.cs",
+              "ToolTip": "C:\\Users\\gobae\\OneDrive\\Desktop\\Code\\Code\\Games\\Strikes-Moon-Disaster-Ex\\Assets\\Scripts\\EnemyPathFinding.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyPathFinding.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T20:08:19.236Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
