@@ -8,76 +8,61 @@ public class AimIndicator : MonoBehaviour
         Forward
     }
 
-    [SerializeField] private Transform aimSource;
+    [SerializeField] private Transform ufoTransform;
     [SerializeField] private LayerMask groundMask = ~0;
     [SerializeField] private float maxDistance = 200f;
     [SerializeField] private float heightOffset = 0.02f;
-    [SerializeField] private bool hideWhenNoHit = true;
     [SerializeField] private AlignAxis alignAxis = AlignAxis.Forward;
     [SerializeField] private bool disableColliders = true;
 
     private Renderer[] cachedRenderers;
+    private Transform ufo;
 
     private void Awake()
     {
-        if (aimSource == null && Camera.main != null)
-        {
-            aimSource = Camera.main.transform;
-        }
+        cachedRenderers = GetComponentsInChildren<Renderer>(true);
 
-        if (hideWhenNoHit)
+        if (ufoTransform != null)
+            ufo = ufoTransform;
+        else
         {
-            cachedRenderers = GetComponentsInChildren<Renderer>(true);
+            PlayerMovementController player = UnityEngine.Object.FindFirstObjectByType<PlayerMovementController>();
+            if (player != null) ufo = player.transform;
         }
 
         if (disableColliders)
         {
-            Collider[] colliders = GetComponentsInChildren<Collider>(true);
-            foreach (Collider collider in colliders)
-            {
-                collider.enabled = false;
-            }
+            foreach (Collider col in GetComponentsInChildren<Collider>(true))
+                col.enabled = false;
         }
     }
 
     private void LateUpdate()
     {
-        if (aimSource == null)
+        if (ufo == null) { SetVisible(false); return; }
+
+        Ray ray = new Ray(ufo.position, Vector3.down);
+        RaycastHit[] hits = Physics.RaycastAll(ray, maxDistance, groundMask, QueryTriggerInteraction.Ignore);
+        System.Array.Sort(hits, (a, b) => a.distance.CompareTo(b.distance));
+
+        bool found = false;
+        foreach (RaycastHit h in hits)
         {
-            return;
+            if (h.transform.IsChildOf(ufo)) continue;
+            transform.position = h.point + Vector3.up * heightOffset;
+            transform.rotation = Quaternion.Euler(-90f, 0f, 0f);
+            SetVisible(true);
+            found = true;
+            break;
         }
 
-        Ray ray = new Ray(aimSource.position, aimSource.forward);
-        if (Physics.Raycast(ray, out RaycastHit hit, maxDistance, groundMask, QueryTriggerInteraction.Ignore))
-        {
-            transform.position = hit.point + (hit.normal * heightOffset);
-            Vector3 fromAxis = alignAxis == AlignAxis.Forward ? Vector3.forward : Vector3.up;
-            transform.rotation = Quaternion.FromToRotation(fromAxis, hit.normal);
-
-            if (hideWhenNoHit)
-            {
-                SetVisible(true);
-            }
-        }
-        else if (hideWhenNoHit)
-        {
-            SetVisible(false);
-        }
+        if (!found) SetVisible(false);
     }
 
     private void SetVisible(bool visible)
     {
-        if (cachedRenderers == null || cachedRenderers.Length == 0)
-        {
-            return;
-        }
-
-        foreach (Renderer renderer in cachedRenderers)
-        {
-            if (renderer != null)
-            {
-                renderer.enabled = visible;
-            }
-        }
+        if (cachedRenderers == null || cachedRenderers.Length == 0) return;
+        foreach (Renderer r in cachedRenderers)
+            if (r != null) r.enabled = visible;
     }
 }

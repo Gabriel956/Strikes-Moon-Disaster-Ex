@@ -2,8 +2,15 @@ using UnityEngine;
 
 public class ProjectileHit : MonoBehaviour
 {
-    [SerializeField] private string targetTag = "astro";
     [SerializeField] private bool destroyProjectileOnHit = true;
+
+    private GameManager gameManager;
+    private bool hasHit = false;
+
+    void Start()
+    {
+        gameManager = Object.FindFirstObjectByType<GameManager>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -17,30 +24,21 @@ public class ProjectileHit : MonoBehaviour
 
     private void TryHit(Transform hitTransform)
     {
-        if (hitTransform == null)
+        if (hasHit) return;
+        if (hitTransform == null) return;
+
+        hasHit = true;
+
+        astroAbduct astro = hitTransform.GetComponent<astroAbduct>()
+                         ?? hitTransform.GetComponentInParent<astroAbduct>();
+
+        if (astro != null)
         {
-            return;
+            gameManager?.AddScore();
+            Destroy(astro.gameObject);
         }
 
-        GameObject target = null;
-        if (hitTransform.CompareTag(targetTag))
-        {
-            target = hitTransform.gameObject;
-        }
-        else if (hitTransform.root != null && hitTransform.root.CompareTag(targetTag))
-        {
-            target = hitTransform.root.gameObject;
-        }
-
-        if (target == null)
-        {
-            return;
-        }
-
-        Destroy(target);
         if (destroyProjectileOnHit)
-        {
             Destroy(gameObject);
-        }
     }
 }

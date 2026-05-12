@@ -14,6 +14,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/mainGame.unity
     guid: 460161b7cf631294b97da38d154ee98d
+  - enabled: 1
+    path: Assets/Scenes/Phase1.unity
+    guid: fe03a84c3cd21e7faa29cbe96b929555
+  - enabled: 1
+    path: Assets/Scenes/Phase2.unity
+    guid: 2890f33ffdfa34941a43ece3fab34273
+  - enabled: 1
+    path: Assets/Scenes/Phase3.unity
+    guid: da2d969c663007b4d9f40319fe2e84a6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

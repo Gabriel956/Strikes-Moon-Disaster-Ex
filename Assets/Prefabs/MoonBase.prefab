@@ -608,6 +608,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8787168535714077438}
+  - component: {fileID: 2549281462061494427}
   m_Layer: 0
   m_Name: Pewpew
   m_TagString: Untagged
@@ -632,6 +633,21 @@ Transform:
   - {fileID: 3432586935263736320}
   m_Father: {fileID: 735556406263764869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2549281462061494427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798885674064130265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 404784cf9e1581e4a88d2606738c2201, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CannonShoot
+  projectilePrefab: {fileID: 6118845726182641678, guid: fcc1d5a8e59cc7e4ebab2771e633953b, type: 3}
+  fireRate: 3
+  projectileSpeed: 8
 --- !u!1 &1923210414510992991
 GameObject:
   m_ObjectHideFlags: 0

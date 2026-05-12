@@ -9,10 +9,12 @@ public class astroAbduct : MonoBehaviour
     private Transform ufo;
     private GameManager gameManager;
     private Rigidbody rb;
+    private UnityEngine.AI.NavMeshAgent navAgent;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
     public void StartAbduction(Transform ufoTransform, GameManager gm)
@@ -21,6 +23,8 @@ public class astroAbduct : MonoBehaviour
         isBeingAbducted = true;
         ufo = ufoTransform;
         gameManager = gm;
+
+        if (navAgent != null) navAgent.enabled = false;
 
         if (rb != null)
         {

@@ -70,10 +70,12 @@
     <Compile Include="Assets\Scripts\UfoAbsorber.cs" />
     <Compile Include="Assets\Scripts\EnemyPathFinding.cs" />
     <Compile Include="Assets\Scripts\AbductionZone.cs" />
+    <Compile Include="Assets\Scripts\CannonShoot.cs" />
     <Compile Include="Assets\Scripts\AimIndicator.cs" />
     <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\SimpleProjectile.cs" />
     <Compile Include="Assets\Scripts\astroAbduct.cs" />
+    <Compile Include="Assets\Scripts\CannonProjectileHit.cs" />
     <Compile Include="Assets\Scripts\UFOHealth.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />

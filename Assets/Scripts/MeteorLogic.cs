@@ -4,13 +4,14 @@ public class MeteorLogic : MonoBehaviour
 {
     public float gravityMultiplier = 2f;
     public float maxFallSpeed = 50f;
+    public float initialSpeed = 10f;
     private Rigidbody rb;
     private bool hasHit = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.linearVelocity = Vector3.down * 10f;
+        rb.linearVelocity = Vector3.down * initialSpeed;
     }
 
     void FixedUpdate()

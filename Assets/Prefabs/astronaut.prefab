@@ -301,10 +301,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa8d51ee4e660375aa4e046c80ca73a7, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::astroAbduct
   isBeingAbducted: 0
   riseSpeed: 1.5
+  absorptionRadius: 0.3
 --- !u!195 &-7931617025052426629
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -324,7 +325,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 0.3
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &-9082453195690125093
@@ -337,7 +338,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 924645055b559fd4296653d2b2873dfc, type: 3}
-  m_Name:
+  m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyPathFinding
   player: {fileID: 0}
 --- !u!1 &6789811277164497795

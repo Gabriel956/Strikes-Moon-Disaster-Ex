@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,16 +9,22 @@ public class GameManager : MonoBehaviour
     public float timeRemaining = 20f;
     public bool gameActive = true;
 
+    public string nextSceneName = "";
+    public bool highScoreMode = false;
+    public int score = 0;
+
     private UFOHealth ufoHealth;
 
     void Start()
     {
+        Time.timeScale = 1f;
         ufoHealth = Object.FindFirstObjectByType<UFOHealth>();
     }
 
     void Update()
     {
         if (!gameActive) return;
+        if (highScoreMode) return;
 
         timeRemaining -= Time.deltaTime;
 
@@ -31,6 +38,7 @@ public class GameManager : MonoBehaviour
     public void AddAbduction()
     {
         if (!gameActive) return;
+        if (highScoreMode) { score++; return; }
 
         abductedCount++;
 
@@ -40,13 +48,28 @@ public class GameManager : MonoBehaviour
             EndGame(true);
     }
 
+    public void AddScore()
+    {
+        if (!gameActive) return;
+        score++;
+    }
+
     void OnGUI()
     {
         GUIStyle style = new GUIStyle();
         style.fontSize = 48;
         style.normal.textColor = Color.white;
-        GUI.Label(new Rect(10, 10, 600, 60), "Abducted: " + abductedCount, style);
-        GUI.Label(new Rect(10, 75, 600, 60), "Time: " + Mathf.Ceil(timeRemaining), style);
+
+        if (highScoreMode)
+        {
+            GUI.Label(new Rect(10, 10, 600, 60), "Score: " + score, style);
+        }
+        else
+        {
+            GUI.Label(new Rect(10, 10, 600, 60), "Abducted: " + abductedCount, style);
+            GUI.Label(new Rect(10, 75, 600, 60), "Time: " + Mathf.Ceil(timeRemaining), style);
+        }
+
         int hits = (ufoHealth != null) ? ufoHealth.HitsRemaining : 3;
         GUI.Label(new Rect(10, 140, 600, 60), "Health: " + hits, style);
     }
@@ -54,7 +77,16 @@ public class GameManager : MonoBehaviour
     public void EndGame(bool won)
     {
         gameActive = false;
-        Debug.Log(won ? "NEXT LEVEL!" : "YOU LOST...");
         Time.timeScale = 0f;
+        if (won)
+        {
+            Debug.Log("NEXT LEVEL!");
+            if (!string.IsNullOrEmpty(nextSceneName))
+                SceneManager.LoadScene(nextSceneName);
+        }
+        else
+        {
+            Debug.Log("YOU LOST...");
+        }
     }
 }
