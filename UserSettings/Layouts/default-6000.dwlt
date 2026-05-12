@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1278
     height: 702.5
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -689,7 +689,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs
+    - Assets/Scenes
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Prefabs
+  - Assets/Scenes
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\OmarsDesktop\Desktop\GameDevFinal\Strikes-Moon-Disaster-Ex
   m_LockTracker:
@@ -708,12 +708,14 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs:
-    - m_Data: 62204
+    - m_Data: 46822
     m_LastClickedID:
-      m_Data: 62204
+      m_Data: 46822
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 46850
+    - m_Data: 46494
+    - m_Data: 1000000000
+    - m_Data: 2147483647
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -746,7 +748,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 46850
+    - m_Data: 46494
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -774,9 +776,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: 67584
-    m_LastClickedInstanceID: 67584
-    m_HadKeyboardFocusLastEvent: 1
+    - m_Data: 46920
+    m_LastClickedInstanceID: 46920
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs:
     - m_Data: 49256
     m_RenameOverlay:
@@ -900,15 +902,12 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 46920
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -51950
-      - m_Data: -50034
-      - m_Data: -49652
-      - m_Data: -49428
-      - m_Data: -47570
+      - m_Data: -1298
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1529,9 +1528,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -2.9415102, y: 10.376453, z: -12.964455}
+    m_Target: {x: -0.5225382, y: 0.81270266, z: -3.5575166}
     speed: 2
-    m_Value: {x: -4.5969963, y: -0.1933515, z: 0.84008956}
+    m_Value: {x: -0.5225382, y: 0.81270266, z: -3.5575166}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1577,13 +1576,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.482
   m_Rotation:
-    m_Target: {x: -0.24212672, y: -0.26596913, z: 0.069203444, w: -0.93051565}
+    m_Target: {x: -0.14124851, y: -0.46936327, z: 0.07664976, w: -0.8683227}
     speed: 2
-    m_Value: {x: -0.090981014, y: 0.8324373, z: -0.14309959, w: -0.527535}
+    m_Value: {x: 0.14124851, y: 0.46936324, z: -0.076649755, w: 0.8683226}
   m_Size:
-    m_Target: 0.8660283
+    m_Target: 3.379933
     speed: 2
-    m_Value: 3.2278361
+    m_Value: 3.379933
   m_Ortho:
     m_Target: 0
     speed: 2
