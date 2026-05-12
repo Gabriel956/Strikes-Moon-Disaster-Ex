@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class UFOHealth : MonoBehaviour
 {
-    public int maxHits = 3;
+    public int maxHits = 5;
     private int hitsRemaining;
     private GameManager gameManager;
 

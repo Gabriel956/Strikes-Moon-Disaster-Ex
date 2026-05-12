@@ -189,6 +189,57 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &116737901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 116737903}
+  - component: {fileID: 116737902}
+  m_Layer: 0
+  m_Name: AstroSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &116737902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116737901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc782a268f58094c8c178873a1acaf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  enemyPrefab: {fileID: 3682086383667509469, guid: e51a65ac0eec30acaa7d04d1ab118465, type: 3}
+  spawnInterval: 1
+  maxEnemies: 10
+  minX: -22
+  maxX: 8
+  minZ: -8
+  maxZ: 10
+--- !u!4 &116737903
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116737901}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -19.45761, y: 0.07059, z: -3.35488}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &360895534
 GameObject:
   m_ObjectHideFlags: 0
@@ -5780,6 +5831,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ufo
       objectReference: {fileID: 0}
+    - target: {fileID: 6808651057076991195, guid: 9f3d55ca4a76ec9ee8f3177bfbde46b1, type: 3}
+      propertyPath: maxHits
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8192494733659670342, guid: 9f3d55ca4a76ec9ee8f3177bfbde46b1, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -5979,7 +6034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccc782a268f58094c8c178873a1acaf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemyPrefab: {fileID: 2051921270}
+  enemyPrefab: {fileID: 3682086383667509469, guid: e51a65ac0eec30acaa7d04d1ab118465, type: 3}
   spawnInterval: 1
   maxEnemies: 18
   minX: -22
@@ -6137,3 +6192,4 @@ SceneRoots:
   - {fileID: 1835447479}
   - {fileID: 5040362043682186754}
   - {fileID: 2105007277}
+  - {fileID: 116737903}

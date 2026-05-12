@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b429ca154f379e345aa086fcc84b1461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UFOHealth
-  maxHits: 3
+  maxHits: 5
 --- !u!1 &3584824735171991486
 GameObject:
   m_ObjectHideFlags: 0
