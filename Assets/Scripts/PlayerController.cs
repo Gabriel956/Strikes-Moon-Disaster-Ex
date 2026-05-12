@@ -22,6 +22,8 @@ public class PlayerMovementController : MonoBehaviour
     [SerializeField] private float projectileLifetime = 3f;
     [SerializeField] private float projectileSpawnOffset = 0.2f;
 
+    private GameManager gameManager;
+
     void OnMove(InputValue inputValue)
     {
         currentMovementInput = inputValue.Get<Vector2>();
@@ -41,6 +43,11 @@ public class PlayerMovementController : MonoBehaviour
             return;
         }
 
+        if (gameManager == null || !gameManager.highScoreMode)
+        {
+            return;
+        }
+
         FireProjectile();
     }
 
@@ -52,6 +59,7 @@ public class PlayerMovementController : MonoBehaviour
         {
             cameraTransform = Camera.main.transform;
         }
+        gameManager = UnityEngine.Object.FindFirstObjectByType<GameManager>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -98,8 +106,8 @@ public class PlayerMovementController : MonoBehaviour
             return;
         }
 
-        Vector3 spawnPosition = firePoint.position + (firePoint.forward * projectileSpawnOffset);
-        GameObject projectile = Instantiate(projectilePrefab, spawnPosition, firePoint.rotation);
+        Vector3 spawnPosition = transform.position + (Vector3.down * projectileSpawnOffset);
+        GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
 
         Collider[] projectileColliders = projectile.GetComponentsInChildren<Collider>();
         Collider[] playerColliders = GetComponentsInChildren<Collider>();
@@ -120,7 +128,7 @@ public class PlayerMovementController : MonoBehaviour
         Rigidbody projectileRigidbody = projectile.GetComponent<Rigidbody>();
         if (projectileRigidbody != null)
         {
-            projectileRigidbody.linearVelocity = firePoint.forward * projectileSpeed;
+            projectileRigidbody.linearVelocity = Vector3.down * projectileSpeed;
         }
         else
         {
@@ -130,7 +138,7 @@ public class PlayerMovementController : MonoBehaviour
                 mover = projectile.AddComponent<SimpleProjectile>();
             }
 
-            mover.Initialize(firePoint.forward, projectileSpeed);
+            mover.Initialize(Vector3.down, projectileSpeed);
         }
 
         if (projectileLifetime > 0f)

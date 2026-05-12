@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "moon_base.slnx"
+    "dotnet.defaultSolution": "Strikes-Moon-Disaster-Ex.slnx"
 }
