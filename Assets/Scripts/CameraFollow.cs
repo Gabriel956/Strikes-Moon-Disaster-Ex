@@ -7,7 +7,8 @@ public class CameraFollow : MonoBehaviour
     
     public Transform target;
     public Vector3 offset;
-    [SerializeField] private float rotationSpeed = 0.2f;
+    [SerializeField] private float mouseRotationSpeed = 0.2f;
+    [SerializeField] private float gamepadRotationSpeed = 0.4f;
     [SerializeField] private float minPitch = -30f;
     [SerializeField] private float maxPitch = 70f;
     [SerializeField] private bool lockCursorWhileRotating = true;
@@ -15,9 +16,13 @@ public class CameraFollow : MonoBehaviour
     private float yaw;
     private float pitch;
     private float distance;
+    private PlayerInput playerInput;
 
     void Awake()
     {
+        playerInput = new PlayerInput();
+        playerInput.CharacterControls.Enable();
+
         distance = offset.magnitude;
         if (distance <= 0.001f)
         {
@@ -38,12 +43,17 @@ public class CameraFollow : MonoBehaviour
             return;
         }
 
+        Vector2 lookInput = playerInput.CharacterControls.Look.ReadValue<Vector2>();
+        yaw += lookInput.x * gamepadRotationSpeed;
+        pitch -= lookInput.y * gamepadRotationSpeed;
+        pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
+
         bool isRotating = Mouse.current != null && Mouse.current.rightButton.isPressed;
         if (isRotating)
         {
             Vector2 delta = Mouse.current.delta.ReadValue();
-            yaw += delta.x * rotationSpeed;
-            pitch -= delta.y * rotationSpeed;
+            yaw += delta.x * mouseRotationSpeed;
+            pitch -= delta.y * mouseRotationSpeed;
             pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
         }
 
