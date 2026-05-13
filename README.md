@@ -56,13 +56,15 @@ Not applicable. This level is high score based.
 
 ### TODO
 
-- A tractor beam
-- Platforms to block your assault
-- Point system
-
 ### Done
 
 - Have basic movement implemented (all directions possible)
 - Have a basic plain with astronaut spawns
 - Camera follows ufo
 - Shoot beams downwards
+- A tractor beam
+- Point system
+
+Omar Alanis
+Gabriel Baez
+Elyn Cortez
